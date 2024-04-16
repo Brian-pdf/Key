@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (keyPressed === secretKey) {
             const message = document.createElement('p');
-            message.textContent = 'SECRET KEY PRESSED';
+            message.textContent = `SECRET KEY ${secretKey.toUpperCase()} PRESSED`;
             document.body.appendChild(message);
 
-        
+            // Assign a new secret key
             secretKey = getRandomLetter();
         }
     }
